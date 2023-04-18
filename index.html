@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PHP IDE</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>CodeCraft</h1>
+    <div class="container">
+        <div id="operations">
+            <button onclick="genCode()">Run</button>
+            <button onclick="execAndGetPHPOutput()">Execute</button>
+
+            <div class="operation" draggable="true" data-operation="variable">Set Variable</div>
+            <div class="operation" draggable="true" data-operation="outputStatement">Echo</div>
+
+            <div class="operation" draggable="true" data-operation="add">Addition '+'</div>
+            <div class="operation" draggable="true" data-operation="subtract">Subtraction '-'</div>
+            <div class="operation" draggable="true" data-operation="multiply">Multiplication '*'</div>
+            <div class="operation" draggable="true" data-operation="divide">Division '/'</div>
+            <div class="operation" draggable="true" data-operation="mod">Modulus '%'</div>
+            <div class="operation" draggable="true" data-operation="equal">Equal '='</div>
+            <div class="operation" draggable="true" data-operation="notequal">Not Equal '!='</div>
+            <div class="operation" draggable="true" data-operation="forloop">For Loop</div>
+            <div class="operation" draggable="true" data-operation="whileloop">While Loop</div>
+            <div class="operation" draggable="true" data-operation="function">Function Creation</div>
+            <div class="operation" draggable="true" data-operation="if">If Statement</div>
+            <div class="operation" draggable="true" data-operation="else">Else Statement</div>
+            <div class="operation" draggable="true" data-operation="readFile">Read File</div>
+            <div class="operation" draggable="true" data-operation="writeFile">Write File</div>
+        </div>
+        <div id="programmableArea">
+
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; justify-content: center;">
+            <pre><div id="code"></div></pre>
+            <div id="output">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
